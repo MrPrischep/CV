@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: #f1f1f1;
+  color: #0f141e;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 750px;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+.personal-information {
+  margin-left: 40px;
+}
+
+.avatar {
+  width: 180px;
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info p {
+  color: #878a8f;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.bg-blue {
+  background: #c4eef8;
+}
+
+.bg-pink {
+  background: rgb(241, 217, 232);
+}
+
+.bg-redred {
+  background: #facfcf;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2) {
+  color: #86898f;
+}
+
+.table td:nth-child(3) {
+  color: #86898f;
+  width: 100px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f1f1f1;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 50%;
+}
+
+/* The Close Button */
+.close, .closeBtn {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  background: rgb(165, 155, 155);
+  padding: 10px 10px;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 15px;
+}
+  
+.btn:hover {
+  opacity: 0.9;
+}
+
+.list {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.list li {
+  color: #6f7275;
+  margin-bottom: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: grey;
+}

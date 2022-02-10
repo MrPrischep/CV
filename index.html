@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dmitrii CV</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="info">
+                <img src="avatar.jpg" alt="My photo" class="avatar" />
+
+                <div class="personal-information">
+                    <h1>Dmitrii Kozhevnikov</h1>
+                    <p>Age: 27 years</p>
+                    <p>Citizenship: Russian Federation, city Perm</p>
+                    <p>I am a student at the <strong>Faculty of Information Technology in Brno</strong></p>
+                </div>
+            </div>
+      
+            <div class="card bg-yellow">
+                <h2>Education</h2>
+                <table class="table">
+                    <tr>
+                        <td>Gymnasium №17</td>
+                        <td>student</td>
+                        <td>2001 - 2012</td>
+                    </tr>
+                    <tr>
+                        <td>Perm National Research Polytechnic University: Faculty of civil engineering</td>
+                        <td>Manufacture of building structures</td>
+                        <td>2012 - 2016</td>
+                    </tr>
+                    <tr>
+                        <td>Perm National Research Polytechnic University; Faculty of civil engineering</td>
+                        <td>Automated modelling and design systems in construction</td>
+                        <td>2014 - 2016</td>
+                    </tr>
+                    <tr>
+                        <td>Brno University of technology (VUT): Faculty of Information Technology</td>
+                        <td>Software developer</td>
+                        <td>2019 - now</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card bg-green">
+                <h2>Work experience and professional skills</h2>
+                <table class="table">
+                    <tr>
+                        <td>Scientific and Production Association <em>«Restoration»</em></td>
+                        <td>Engineer</td>
+                        <td>2016 - 2018</td>
+                        <td>
+                            <button id="restBtn" class="btn">Show description</button>
+                            <div id="restModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="closeBtn">&times;</span>
+                                    <p>
+                                        I was engaged in drawing up and filling out construction documents: 
+                                        acts on hidden works, protocols on general works, registers of construction objects, 
+                                        contracts and orders for technical supervision and author's supervision, working drawings.
+                                    </p>
+                                    <p>
+                                        Participation in construction works: measurement of working sizes of the object of construction,
+                                        work with drawings, conducting technical supervision of construction works, 
+                                        control of production of construction works, purchase of building materials, compilation of reports of the volume of works.
+                                    </p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal = document.getElementById("restModal");
+                                var btn = document.getElementById("restBtn");
+                                var span = document.getElementsByClassName("closeBtn")[0];
+                                
+                                btn.onclick = function() {
+                                  modal.style.display = "block";
+                                }
+
+                                span.onclick = function() {
+                                  modal.style.display = "none";
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Private organization of the construction of houses and cottages  <em>«Log houses»</em></td>
+                        <td>Design and construct engineer</td>
+                        <td>2016 - 2018</td>
+                        <td>
+                            <button id="houseBtn" class="btn">Show description</button>
+                            <div id="houseModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>
+                                        Designing low-rise houses in the programs K3 Cottage and ArchiCad, as well as calculating the cost of construction.
+                                    </p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal2 = document.getElementById("houseModal");
+                                var btn2 = document.getElementById("houseBtn");
+                                var span2 = document.getElementsByClassName("close")[0];
+                                
+                                btn2.onclick = function() {
+                                  modal2.style.display = "block";
+                                }
+
+                                span2.onclick = function() {
+                                  modal2.style.display = "none";
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card bg-red">
+                <h2>Additional skills</h2>
+                <ol class="list">
+                    <li>English - B1</li>
+                    <li>Czech - B1-B2</li>  
+                    <li>
+                        Knowledge of programs: 
+                        <ul class="list">
+                            <li>AutoCad</li>
+                            <li>ArchiCad</li>
+                            <li>К3 Cottage</li>
+                            <li>MS Word</li>
+                            <li>MS Excel</li>
+                            <li>3dMax</li>
+                        </ul>
+                    </li>
+                    <li>Experience working with languages:
+                        <ul class="list"> 
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                            <li>OracleSQL</li>
+                            <li>MySQL</li>
+                            <li>Assembler</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>
+                        I  have a driver's license (from Russia) category B
+                    </li>
+                </ol>
+            </div>
+
+            <div class="card bg-blue">
+                <h2>Hobby</h2>
+                <ol class="list">
+                    <li>Drawing sketches of tattoos</li>
+                    <li>Computers</li>  
+                    <li>Longboard and bike</li>
+                    <li>Web-development</li>
+                </ol>
+            </div>
+
+            <div class="card bg-pink">
+                <h2>Personal qualities</h2>
+                <ol class="list">
+                    <li>Honest</li>
+                    <li>Responsible</li>  
+                    <li>Easy to learn new</li>
+                    <li>Efficient</li>
+                </ol>
+            </div>
+
+            <div class="card bg-redred">
+                <h2>Contact information</h2>
+
+                <p>Phone: +420-770-675-323</p>
+                <p>E-mail: mrprischep@gmail.com</p>
+                <a href="https://vk.com/id108522587" target="_blank">VK</a>
+                |
+                <a href="https://github.com/MrPrischep" target="_blank">GitHub</a>
+                |
+                <a href="https://www.linkedin.com/in/dmirti-k-0914a6231/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </body>
+</html>
